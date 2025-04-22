@@ -63,6 +63,11 @@ public class v3_promo extends JDialog implements ActionListener {
 			lblNewLabel_2.setBounds(51, 120, 100, 14);
 			contentPanel.add(lblNewLabel_2);
 		}
+		{
+			JButton btnNewButton_1 = new JButton("New button");
+			btnNewButton_1.setBounds(207, 76, 100, 23);
+			contentPanel.add(btnNewButton_1);
+		}
 	}
 
 	public void actionPerformed(ActionEvent e) {
