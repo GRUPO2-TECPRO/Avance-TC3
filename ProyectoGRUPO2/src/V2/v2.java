@@ -28,6 +28,9 @@ public class v2 extends JDialog implements ActionListener {
 	private JLabel lblNewLabel_4;
 	private JScrollPane scrollPane;
 	private JTextArea txtS;
+	private JButton btnNewButton;
+	private JLabel lblNewLabel_5;
+	private JLabel lblNewLabel_6;
 
 	/**
 	 * Launch the application.
@@ -70,10 +73,16 @@ public class v2 extends JDialog implements ActionListener {
 			contentPanel.add(btn2);
 		}
 		{
+			btnNewButton = new JButton("Pollo entero");
+			btnNewButton.addActionListener(this);
+			btnNewButton.setBounds(400, 80, 89, 23);
+			contentPanel.add(btnNewButton);
+		}
+		{
 			lblNewLabel_1 = new JLabel("1/4 pollo + papas fritas\r\n");
 			lblNewLabel_1.setBounds(43, 103, 224, 14);
 			contentPanel.add(lblNewLabel_1);
-		}
+		}	
 		{
 			lblNewLabel_2 = new JLabel(" + ensalada");
 			lblNewLabel_2.setBounds(42, 114, 81, 14);
@@ -97,14 +106,28 @@ public class v2 extends JDialog implements ActionListener {
 				txtS = new JTextArea();
 				scrollPane.setViewportView(txtS);
 			}
+				
+			lblNewLabel_5 = new JLabel("1 Pollo + papas fritas ");
+			lblNewLabel_5.setBounds(392, 103, 138, 14);
+			contentPanel.add(lblNewLabel_5);
+		}
+		{
+			lblNewLabel_6 = new JLabel(" + ensalada");
+			lblNewLabel_6.setBounds(389, 114, 89, 14);
+			contentPanel.add(lblNewLabel_6);
 		}
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btnNewButton) {
+			do_btnNewButton_actionPerformed(e);
+		}
 		if (e.getSource() == btn1) {
 			do_btn1_actionPerformed(e);
 		}
 	}
 	protected void do_btn1_actionPerformed(ActionEvent e) {
 		
+	}
+	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
 	}
 }
