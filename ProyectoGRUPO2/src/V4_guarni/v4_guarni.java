@@ -42,9 +42,24 @@ public class v4_guarni extends JDialog {
 			contentPanel.add(lblNewLabel);
 		}
 		{
-			JButton btnNewButton = new JButton("New button");
-			btnNewButton.setBounds(41, 65, 89, 23);
+			JButton btnNewButton = new JButton("Arroz Chaufa");
+			btnNewButton.setBounds(47, 71, 115, 23);
 			contentPanel.add(btnNewButton);
+		}
+		{
+			JButton btnNewButton_1 = new JButton("Ensalada ");
+			btnNewButton_1.setBounds(47, 145, 115, 23);
+			contentPanel.add(btnNewButton_1);
+		}
+		{
+			JLabel lblNewLabel_1 = new JLabel("Porción de ensalada");
+			lblNewLabel_1.setBounds(57, 170, 116, 14);
+			contentPanel.add(lblNewLabel_1);
+		}
+		{
+			JLabel lblNewLabel_1 = new JLabel("Porción de Chaufa");
+			lblNewLabel_1.setBounds(57, 96, 116, 14);
+			contentPanel.add(lblNewLabel_1);
 		}
 	}
 
