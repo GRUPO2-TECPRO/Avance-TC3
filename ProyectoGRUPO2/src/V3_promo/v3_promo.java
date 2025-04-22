@@ -54,19 +54,29 @@ public class v3_promo extends JDialog implements ActionListener {
 			contentPanel.add(btnNewButton);
 		}
 		{
-			JLabel lblNewLabel_1 = new JLabel("1/4 Pollo + papas + ensalada +");
+			JLabel lblNewLabel_1 = new JLabel("1/2 Pollo + papas + ensalada +");
 			lblNewLabel_1.setBounds(21, 101, 167, 14);
 			contentPanel.add(lblNewLabel_1);
 		}
 		{
-			JLabel lblNewLabel_2 = new JLabel("gaseosa de 500ml");
+			JLabel lblNewLabel_2 = new JLabel("gaseosa de 1L");
 			lblNewLabel_2.setBounds(51, 120, 100, 14);
 			contentPanel.add(lblNewLabel_2);
 		}
 		{
-			JButton btnNewButton_1 = new JButton("New button");
-			btnNewButton_1.setBounds(207, 76, 100, 23);
+			JButton btnNewButton_1 = new JButton("Combo 2");
+			btnNewButton_1.setBounds(293, 76, 110, 23);
 			contentPanel.add(btnNewButton_1);
+		}
+		{
+			JLabel lblNewLabel_1 = new JLabel("1 Pollo + papas + ensalada +");
+			lblNewLabel_1.setBounds(279, 101, 167, 14);
+			contentPanel.add(lblNewLabel_1);
+		}
+		{
+			JLabel lblNewLabel_2 = new JLabel(" gaseosa de 2.5L");
+			lblNewLabel_2.setBounds(303, 120, 110, 14);
+			contentPanel.add(lblNewLabel_2);
 		}
 	}
 
