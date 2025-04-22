@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import V2.v2;
 import V3_promo.v3_promo;
+import V4_guarni.v4_guarni;
 
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -80,6 +81,7 @@ public class v1 extends JFrame implements ActionListener {
 				}
 				{
 					mntmNewMenuItem_2 = new JMenuItem("Guarniciones");
+					mntmNewMenuItem_2.addActionListener(this);
 					mnNewMenu_1.add(mntmNewMenuItem_2);
 				}
 			}
@@ -101,6 +103,9 @@ public class v1 extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == mntmNewMenuItem_2) {
+			do_mntmNewMenuItem_2_actionPerformed(e);
+		}
 		if (e.getSource() == mntmNewMenuItem_3) {
 			do_mntmNewMenuItem_3_actionPerformed(e);
 		}
@@ -111,11 +116,14 @@ public class v1 extends JFrame implements ActionListener {
 	protected void do_mntmNewMenuItem_actionPerformed(ActionEvent e) {
 		
 	  v2 car = new v2();
-	  car.setVisible(true);
-	 
+	  car.setVisible(true);	 
 	}
 	protected void do_mntmNewMenuItem_3_actionPerformed(ActionEvent e) {
 		v3_promo pro = new v3_promo();
 		pro.setVisible(true);
+	}
+	protected void do_mntmNewMenuItem_2_actionPerformed(ActionEvent e) {
+		v4_guarni gua = new v4_guarni();
+		gua.setVisible(true);
 	}
 }
