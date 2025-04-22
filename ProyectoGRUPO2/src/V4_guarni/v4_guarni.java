@@ -41,6 +41,11 @@ public class v4_guarni extends JDialog {
 			lblNewLabel.setBounds(162, 22, 126, 14);
 			contentPanel.add(lblNewLabel);
 		}
+		{
+			JButton btnNewButton = new JButton("New button");
+			btnNewButton.setBounds(41, 65, 89, 23);
+			contentPanel.add(btnNewButton);
+		}
 	}
 
 }
