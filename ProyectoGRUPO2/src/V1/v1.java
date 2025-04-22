@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import V2.v2;
+import V3_promo.v3_promo;
 
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -24,9 +25,10 @@ public class v1 extends JFrame implements ActionListener {
 	private JMenu mnNewMenu;
 	private JMenuItem mntmNewMenuItem;
 	private JMenuItem mntmNewMenuItem_1;
-	private JMenu mnNewMenu_1;
 	private JMenu mnNewMenu_2;
 	private JLabel lblNewLabel;
+	private JMenu mnNewMenu_1;
+	private JMenuItem mntmNewMenuItem_3;
 	private JMenuItem mntmNewMenuItem_2;
 
 	/**
@@ -67,21 +69,28 @@ public class v1 extends JFrame implements ActionListener {
 					mntmNewMenuItem_1 = new JMenuItem("Bebidas");
 					mnNewMenu.add(mntmNewMenuItem_1);
 				}
+			}
+			{
+				mnNewMenu_1 = new JMenu("Extras");
+				menuBar.add(mnNewMenu_1);
+				{
+					mntmNewMenuItem_3 = new JMenuItem("Promociones");
+					mntmNewMenuItem_3.addActionListener(this);
+					mnNewMenu_1.add(mntmNewMenuItem_3);
+				}
 				{
 					mntmNewMenuItem_2 = new JMenuItem("Guarniciones");
-					mnNewMenu.add(mntmNewMenuItem_2);
+					mnNewMenu_1.add(mntmNewMenuItem_2);
 				}
 			}
 			{
-				mnNewMenu_1 = new JMenu("Promociones");
-				menuBar.add(mnNewMenu_1);
-			}
-			{
-				mnNewMenu_2 = new JMenu("Ubícanos");
-				menuBar.add(mnNewMenu_2);
 				{
-					lblNewLabel = new JLabel("Tlf.: (01)716-6332 ");
-					mnNewMenu_2.add(lblNewLabel);
+					mnNewMenu_2 = new JMenu("Ubícanos");
+					menuBar.add(mnNewMenu_2);
+					{
+						lblNewLabel = new JLabel("Tlf.: (01)716-6332 ");
+						mnNewMenu_2.add(lblNewLabel);
+					}
 				}
 			}
 		}
@@ -92,6 +101,9 @@ public class v1 extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == mntmNewMenuItem_3) {
+			do_mntmNewMenuItem_3_actionPerformed(e);
+		}
 		if (e.getSource() == mntmNewMenuItem) {
 			do_mntmNewMenuItem_actionPerformed(e);
 		}
@@ -101,5 +113,9 @@ public class v1 extends JFrame implements ActionListener {
 	  v2 car = new v2();
 	  car.setVisible(true);
 	 
+	}
+	protected void do_mntmNewMenuItem_3_actionPerformed(ActionEvent e) {
+		v3_promo pro = new v3_promo();
+		pro.setVisible(true);
 	}
 }

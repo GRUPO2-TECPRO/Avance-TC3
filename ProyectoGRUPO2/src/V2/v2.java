@@ -129,5 +129,6 @@ public class v2 extends JDialog implements ActionListener {
 		
 	}
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
+		
 	}
 }
