@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 import V2.v2;
 import V3_promo.v3_promo;
 import V4_guarni.v4_guarni;
+import V5_bebidas.v5_bebidas;
 
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -68,6 +69,7 @@ public class v1 extends JFrame implements ActionListener {
 				}
 				{
 					mntmNewMenuItem_1 = new JMenuItem("Bebidas");
+					mntmNewMenuItem_1.addActionListener(this);
 					mnNewMenu.add(mntmNewMenuItem_1);
 				}
 			}
@@ -103,6 +105,9 @@ public class v1 extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == mntmNewMenuItem_1) {
+			do_mntmNewMenuItem_1_actionPerformed(e);
+		}
 		if (e.getSource() == mntmNewMenuItem_2) {
 			do_mntmNewMenuItem_2_actionPerformed(e);
 		}
@@ -125,5 +130,9 @@ public class v1 extends JFrame implements ActionListener {
 	protected void do_mntmNewMenuItem_2_actionPerformed(ActionEvent e) {
 		v4_guarni gua = new v4_guarni();
 		gua.setVisible(true);
+	}
+	protected void do_mntmNewMenuItem_1_actionPerformed(ActionEvent e) {
+		v5_bebidas bebi = new v5_bebidas();
+		bebi.setVisible(true);
 	}
 }
